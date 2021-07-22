@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Material App',
-      home: HomeScreen(),
+      home: UserDetailsScreen(),
     );
   }
 }
@@ -40,8 +40,8 @@ class UserDetailsProvider extends ChangeNotifier {
   }
 }
 
-class HomeScreen extends StatelessWidget {
-  HomeScreen({
+class UserDetailsScreen extends StatelessWidget {
+  UserDetailsScreen({
     Key? key,
   }) : super(key: key);
   final _formKey = GlobalKey<FormState>();
